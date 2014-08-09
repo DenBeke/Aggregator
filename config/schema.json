@@ -1,0 +1,19 @@
+[
+	{
+		"Title" : "DenBeke",
+		"Url" : "http://labs.denbeke.be/blog",
+		"Description" : "Mathias Beke",
+		
+		"Index" : {
+			"ArticleLinks" : ".entry-title a",
+			"NextLink" : ".page-numbers a.next"
+		},
+		
+		"Article" : {
+			"Title" : "h1.single-title",
+			"Content" : "section.entry-content",
+			"Date" : ".article-header time",
+			"DateFormat" : "January 2, 2006"
+		}
+	}
+]

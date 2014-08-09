@@ -1,0 +1,7 @@
+{
+	"MaxConnections" : 5, 
+	"MaxAttempts" : 10,
+	"CacheDir" : "cache",
+	"SaveDir" : "output",
+	"WaitTime" : 10
+}
