@@ -17,7 +17,7 @@ Building
 ### Install dependencies 
 
     go get github.com/PuerkitoBio/goquery
-    go get "github.com/kennygrant/sanitize"
+    go get github.com/kennygrant/sanitize
 
 
 
