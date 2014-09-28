@@ -25,8 +25,6 @@ func NewFeed(title string, description string) *feed {
 	f.Title = title
 	f.Description = description
 	
-	f.items = sync.RWMutex{} // ------> Is this really needed? <------
-	
 	return f
 	
 }
