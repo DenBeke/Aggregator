@@ -1,11 +1,12 @@
 [
 	{
 		"Title" : "DenBeke",
-		"Url" : "http://labs.denbeke.be/blog",
+		"Url" : "http://denbeke.be/blog",
 		"Description" : "Mathias Beke",
 		
 		"Index" : {
 			"ArticleLinks" : ".entry-title a",
+			"LinksPrefix" : "",
 			"NextLink" : ".page-numbers a.next"
 		},
 		

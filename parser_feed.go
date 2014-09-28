@@ -35,7 +35,7 @@ func (p *parser) parseIndex(schema *FeedSchema, feed *feed, url string) {
 			return false
 		}
 		
-		p.parseArticle(schema, feed, url)
+		p.parseArticle(schema, feed, schema.Index.LinksPrefix + url)
 		
 		return true
 		

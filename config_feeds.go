@@ -15,6 +15,7 @@ type FeedSchema struct {
 	
 	Index struct {
 		ArticleLinks	string
+		LinksPrefix	string
 		NextLink		string
 	}
 	
