@@ -3,7 +3,24 @@ package main
 
 import "log"
 import "time"
+import "strings"
 import "github.com/kennygrant/sanitize"
+
+
+//Removes starting/ending spaces from a string
+func removeSpaces(input string) string {
+
+	for input[0] == ' ' {
+		input = strings.TrimPrefix(input, " ")
+	}
+	for input[len(input)-1] == ' ' {
+		input = strings.TrimSuffix(input, " ")
+	}
+	
+	return input
+	
+}
+
 
 
 func (p *parser) parseArticle(schema *FeedSchema, feed *feed, url string) {
@@ -47,7 +64,7 @@ func (p *parser) parseArticle(schema *FeedSchema, feed *feed, url string) {
 	//Create new article
 	article := Article{}
 	article.Title = title
-	article.Content = sanitize.HTML(content)
+	article.Content = removeSpaces( sanitize.HTML(content) )
 	article.Date = uint(timestamp)
 
 	//Add article to feed
