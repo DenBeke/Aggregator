@@ -16,15 +16,15 @@ Building
 
 ### Install dependencies 
 
-    go get github.com/PuerkitoBio/goquery
-    go get github.com/kennygrant/sanitize
+    $ go get github.com/PuerkitoBio/goquery
+    $ go get github.com/kennygrant/sanitize
 
 
 
 ### Build & Run Aggregator
 
-	go build
-	./Aggregator
+    $ go build
+    $ ./Aggregator
 
 
 Acknowledgements
